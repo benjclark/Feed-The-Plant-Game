@@ -1,0 +1,57 @@
+h1 {text-align: center}
+
+.plant_image {display: block; margin: auto;}
+
+.interactive_section_wrapper {text-align: center; margin-top: 30px;}
+
+.nutrient_power_bars_wrapper {height: 149px;}
+
+.power_bars {background-color: green; width: 50px; height: 100%; display: inline-block; margin: 0 60px;}
+
+/* The power bar girder was only created because the power bars themselves would not position themselves 
+correctly if there was not at least one other element taking up the full height of the parent div */
+.power_bar_girder {width: 1px; height: 100%; display: inline-block; margin: 0;}
+
+.power_bar_values {display: inline-block;}
+
+	#nitrogen_value {margin: 0 131px 0 0;}
+
+	#phosphorous_value {margin: 0;}
+
+	#potassium_value {margin: 0 0 0 131px;}
+
+.power_bar_names {display: inline-block;}
+
+	#nitrogen_text {margin: 0 55px 0 0;}
+
+	#phosphorous_text {margin: 0 0 42px 0;}
+
+	#potassium_text {margin: 0 0 0 45px;}
+
+.plant_food_images {display: inline-block;}
+
+	#coffeebeans {margin: 0 20px 0 0;}
+
+	#bananapeels {margin: 0 0 0 20px;}
+
+.feed_buttons {display: inline-block; width: 75px; height: 65px;}
+	
+	#feed_nitrogen_button {margin: 0 93px 0 0;}
+
+	#feed_phosphorous_button {margin: 0;}
+
+	#feed_potassium_button {margin: 0 0 0 93px;}
+
+.game_instructions, #game_live_timer {text-align: center; margin: 15px 0;}
+
+.game_controls_wrapper {text-align: center;}
+
+.future_enhancements_text_wrapper {margin: 18px 0; text-align: center;}
+
+.future_enhancements_text_wrapper>p {margin: 0 0 7px 0;}
+
+.future_enhancements_text_wrapper>ol {display: inline-block; margin: auto;}
+
+.future_enhancements_text_wrapper>ol>li {text-align: left;}
+
+

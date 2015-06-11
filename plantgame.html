@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="game.css"/>
+  <script src="game.js"></script>
+</head>
+<body>
+  <h1>Feed The Plant Game</h1>
+  <img class="plant_image" src="plant.png" alt="Feed The Plant">
+  <div class="interactive_section_wrapper">
+    <div class="nutrient_power_bars_wrapper">
+      <div class="power_bars" id="nitrogen_bar"></div>
+      <div class="power_bars" id="phosphorous_bar"></div>
+      <div class="power_bars" id="potassium_bar"></div>
+      <div class="power_bar_girder"></div>
+    </div>
+    <br>
+    <p class="power_bar_values" id="nitrogen_value">100%</p>
+    <p class="power_bar_values" id="phosphorous_value">100%</p>
+    <p class="power_bar_values" id="potassium_value">100%</p>
+    <br>
+    <h2 class="power_bar_names" id="nitrogen_text">Nitrogen</h2>
+    <h2 class="power_bar_names" id="phosphorous_text">Phosphorous</h2>
+    <h2 class="power_bar_names" id="potassium_text">Potassium</h2>
+    <br>
+    <img class="plant_food_images" id="coffeebeans" src="coffeebeans.png" alt="Coffee Beans">
+    <img class="plant_food_images" src="bonemeal.png" alt="Bone Meal">
+    <img class="plant_food_images" id="bananapeels" src="bananapeel.png" alt="Banana Peels">
+    <br>
+    <button class="feed_buttons" id="feed_nitrogen_button" onclick="feedCoffeeGrounds(Math.floor(Math.random() * (5 - 3 + 1)) + 3)">Feed</button>
+    <button class="feed_buttons" id="feed_phosphorous_button" onclick="feedBoneMeal(Math.floor(Math.random() * (5 - 3 + 1)) + 3)">Feed</button>
+    <button class="feed_buttons" id="feed_potassium_button" onclick="feedBananaPeels(Math.floor(Math.random() * (5 - 3 + 1)) + 3)">Feed</button>
+  </div>
+  <p class="game_instructions">The aim of the game is to keep the plant alive. The plant will die if any of it's nutrient levels reach 0%.</p>
+  <p id="game_live_timer">Timer: 0 Secs</p>
+  <div class="game_controls_wrapper">
+    <button onclick="startGameTimer(); setInterval(randomlyChangePlantNutrients, 100)">Start Game</button>
+    <button onclick="clearAllIntervals(); restartGame(); startGameTimer(); setInterval(randomlyChangePlantNutrients, 100)">Restart Game</button>
+  </div>
+  <div class="future_enhancements_text_wrapper">
+    <p>Future enhancements:</p>
+    <ol>
+      <li>Leaderboard</li>
+      <li>Power Ups</li>
+      <li>Difficulty Settings</li>
+    </ol>
+  </div>
+</body>
+</html>
