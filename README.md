@@ -1,3 +1,3 @@
 # Feed The Plant Game
 
-This a game I made using JS/CSS/HTML.
+A fun game I made using JavaScript/CSS/HTML. Stop the plant from running out of nutrients!
